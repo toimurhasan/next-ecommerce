@@ -19,7 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={kanit.variable}>{children}</body>
+      <body className={kanit.variable}>
+        <div className="container max-w-[1320px] mx-auto">{children}</div>
+      </body>
     </html>
   );
 }
