@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const Hero = () => {
-  return (
-    <div>Hero</div>
-  )
-}
+  return <img src="banner.png" alt="banner-img" />;
+};
 
-export default Hero
+export default Hero;
