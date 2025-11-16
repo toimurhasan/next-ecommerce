@@ -1,6 +1,6 @@
 import React from "react";
 
-const SmallCards = () => {
+const SmallCard = () => {
   return (
     <div className="h-[225px]  bg-linear-to-b from-[#D7D7D7]  via-[#DADADA] to-[#F5F5F5] relative flex justify-center items-center">
       <span className="absolute bg-white py-1 px-2 top-2 left-2">
@@ -56,4 +56,4 @@ const SmallCards = () => {
   );
 };
 
-export default SmallCards;
+export default SmallCard;
