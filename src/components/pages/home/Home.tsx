@@ -6,6 +6,7 @@ import OurTopSellingProducts from "@/components/ui/Cards/OurTopSellingProducts/O
 import Footer from "@/components/shared/Footer/Footer";
 import NewsLetter from "@/components/shared/NewsLetter/NewsLetter";
 import ProductShowcase from "./ProductShowcase";
+import ProductGrid from "./ProductGrid";
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
         <OurTopSellingProducts />
         </div> */}
           <ProductShowcase />
+          <ProductGrid />
         </div>
       </div>
       <NewsLetter />
