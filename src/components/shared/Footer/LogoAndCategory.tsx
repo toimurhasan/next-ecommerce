@@ -5,7 +5,7 @@ const LogoAndCategory = () => {
   return (
     <div>
       <Logo />
-      <div className="text-white space-y-3 py-4">
+      <div className="text-white space-y-3 py-4 text-sm">
         <div className="uppercase cursor-pointer">about us</div>
         <div className="uppercase cursor-pointer">terms & condition</div>
         <div className="uppercase cursor-pointer">privacy policy</div>
