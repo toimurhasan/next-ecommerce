@@ -7,6 +7,7 @@ import Footer from "@/components/shared/Footer/Footer";
 import NewsLetter from "@/components/shared/NewsLetter/NewsLetter";
 import ProductShowcase from "./ProductShowcase";
 import ProductGrid from "./ProductGrid";
+import BlogSection from "@/components/ui/BlogSection/BlogSection";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
         <Hero />
         <div className="py-5">
           <AllCategories />
+          <BlogSection />
           {/* <div>
         <OurTopSellingProducts />
         </div> */}
