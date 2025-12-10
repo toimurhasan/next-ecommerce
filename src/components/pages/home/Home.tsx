@@ -17,17 +17,13 @@ const Home = () => {
       <Navbar />
       <CategoryBar />
       <Hero />
-
       <AllCategories />
-
       <OurTopSellingProducts />
       <OurFutureProducts />
-
       <BlogSection />
       <Testimonials />
       <ProductShowcase />
       <ProductGrid />
-
       <NewsLetter />
       <Footer />
     </>

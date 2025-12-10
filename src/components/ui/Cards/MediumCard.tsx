@@ -3,15 +3,14 @@ import Image from "next/image";
 const MediumCard = () => {
   return (
     <div>
-      {/* the background image */}
+      {/* background image */}
       <div className="bg-[url(/md-card-bg.png)] h-52 bg-cover bg-center relative text-sm">
         <span className="bg-primary-500 px-2 py-1 absolute top-1 left-1 text-xs text-white">
           TK 300 OFF
         </span>
 
-
-        {/* the forground image */}
-        <div className="absolute h-32 left-16 top-12">
+        {/* centered foreground image */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
           <Image
             src="/md-card.png"
             alt="Medium card"
