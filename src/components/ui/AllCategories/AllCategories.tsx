@@ -6,7 +6,7 @@ import SectionTitle from "../SectionTitle/SectionTitle";
 
 const AllCategories = () => {
   return (
-    <>
+    <div className="container-custom">
       <SectionTitle title={"Our All Categories"} />
       <div className="lg:py-5 py-2 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 lg:gap-5 px-2 ">
         <SmallCard />
@@ -51,7 +51,7 @@ const AllCategories = () => {
         <SmallestCard />
         <SmallestCard />
       </div>
-    </>
+    </div>
   );
 };
 

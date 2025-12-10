@@ -1,53 +1,60 @@
-import React from "react";
+import Image from "next/image";
 
 const SmallCard = () => {
   return (
-    <div className="h-[225px]  bg-linear-to-b from-[#D7D7D7]  via-[#DADADA] to-[#F5F5F5] relative flex justify-center items-center">
+    <div className="h-[225px] bg-linear-to-b from-[#D7D7D7] via-[#DADADA] to-[#F5F5F5] relative flex justify-center items-center">
       <span className="absolute bg-white py-1 px-2 top-2 left-2">
         smartphones
       </span>
 
       <div className="relative">
-        <img src="phone.png" alt="phone" className="w-44" />
+        {/* Optimized Next.js Image */}
+        <Image
+          src="/phone.png"
+          alt="phone"
+          width={176}
+          height={176}
+          className="w-44 h-auto"
+          priority
+        />
+
+        {/* Shadow SVG */}
         <svg
-          className="absolute bottom-0"
+          className="absolute bottom-0 left-1/2 -translate-x-1/2"
           xmlns="http://www.w3.org/2000/svg"
           width="184"
           height="52"
           viewBox="0 0 184 52"
           fill="none"
         >
-          <g filter="url(#filter0_f_44_180)">
+          <g filter="url(#shadow-filter)">
             <ellipse
               cx="92"
               cy="26"
               rx="72"
               ry="6"
               fill="black"
-              fill-opacity="0.5"
+              fillOpacity="0.5"
             />
           </g>
           <defs>
             <filter
-              id="filter0_f_44_180"
+              id="shadow-filter"
               x="0"
               y="0"
               width="184"
               height="52"
               filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB"
+              colorInterpolationFilters="sRGB"
             >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
               <feBlend
                 mode="normal"
                 in="SourceGraphic"
                 in2="BackgroundImageFix"
                 result="shape"
               />
-              <feGaussianBlur
-                stdDeviation="10"
-                result="effect1_foregroundBlur_44_180"
-              />
+              <feGaussianBlur stdDeviation="10" result="blur-effect" />
             </filter>
           </defs>
         </svg>

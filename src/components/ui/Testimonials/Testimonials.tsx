@@ -6,7 +6,7 @@ const Testimonials = () => {
   return (
     <>
       <SectionTitle title="Testimonials" />
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 px-2 lg:grid-cols-4  gap-4 py-4">
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 px-2 lg:grid-cols-4  gap-4 py-4 container-custom">
         <Testimonial />
         <Testimonial />
         <Testimonial />

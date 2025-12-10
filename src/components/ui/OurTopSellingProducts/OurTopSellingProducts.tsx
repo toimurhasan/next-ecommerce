@@ -6,7 +6,7 @@ const OurTopSellingProducts = () => {
   return (
     <>
       <SectionTitle title="Our Top Selling Products" />
-      <div className="lg:py-5 py-4 grid  sm:grid-cols-5   gap-4 lg:gap-5 px-2 ">
+      <div className="lg:py-5 py-4 grid  sm:grid-cols-5   gap-4 lg:gap-5 px-2 container-custom">
         <MediumCard />
         <MediumCard />
         <MediumCard />
